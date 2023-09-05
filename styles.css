@@ -1,0 +1,41 @@
+:root {
+  --black: rgba(23, 23, 23, 255);
+  --purple: rgba(126, 137, 201, 255);
+  --white: rgba(255, 255, 255, 0.5);
+}
+/* clear defaults */
+h1,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", monospace;
+  min-height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #main {
+    width: 75%;
+    header {
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem 0 2.5rem 0;
+    }
+    #body {
+      margin-top: 1.5rem;
+
+      h1 {
+        font-size: 4rem;
+        color: white;
+      }
+      p {
+        font-size: 1.3rem;
+        color: var(--white);
+      }
+    }
+  }
+}
