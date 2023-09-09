@@ -9,8 +9,12 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+
 body {
-  font-family: "Open Sans", monospace;
+  font-family: "requires math? you like maths rightOpen Sans", monospace;
   min-height: 100vh;
   background-color: var(--black);
   color: var(--white);
@@ -24,6 +28,34 @@ body {
       display: flex;
       flex-direction: column;
       padding: 2.5rem 0 2.5rem 0;
+    }
+    #header {
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        #logo {
+          display: block;
+        }
+        #links {
+          width: 20rem;
+          display: flex;
+          justify-content: space-around;
+        }
+        #links a:link {
+          color: black;
+        }
+        #links a:visited {
+          color: black;
+        }
+        #links a:hover {
+          color: black;
+        }
+        #links a:active {
+          color: black;
+        }
+      }
     }
     #body {
       margin-top: 1.5rem;
