@@ -1,7 +1,8 @@
 :root {
-  --black: rgba(23, 23, 23, 255);
-  --purple: rgba(126, 137, 201, 255);
-  --white: rgba(255, 255, 255, 0.5);
+  --black: rgba(23, 23, 23, 1);
+  --blue: rgba(126, 137, 201, 1);
+  --light-gray: rgba(255, 255, 255, 0.5);
+  --white: rgba(255, 255, 255, 1);
 }
 /* clear defaults */
 h1,
@@ -14,59 +15,83 @@ a {
 }
 
 body {
-  font-family: "requires math? you like maths rightOpen Sans", monospace;
+  font-family: "Open Sans", monospace;
   min-height: 100vh;
   background-color: var(--black);
-  color: var(--white);
+  color: var(--light-gray);
   display: flex;
   flex-direction: column;
   align-items: center;
 
   #main {
     width: 75%;
-    header {
-      display: flex;
-      flex-direction: column;
-      padding: 2.5rem 0 2.5rem 0;
-    }
+
     #header {
+      z-index: 1;
+      width: 75%;
+      height: 10rem;
+      position: fixed;
+      background-color: var(--black);
+
       header {
         display: flex;
+        flex-direction: column;
+        padding: 2.5rem 0 0 0;
         flex-direction: row;
         justify-content: space-between;
 
-        #logo {
-          display: block;
+        #logo img {
+          width: 4rem;
+          height: auto;
+          margin: 1rem;
+          border-radius: 50%;
         }
         #links {
-          width: 20rem;
+          width: 25rem;
           display: flex;
           justify-content: space-around;
         }
+        #links a {
+          font-size: 1.5rem;
+          margin: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         #links a:link {
-          color: black;
+          color: var(--white);
         }
         #links a:visited {
-          color: black;
+          color: var(--white);
         }
         #links a:hover {
-          color: black;
+          color: var(--white);
         }
         #links a:active {
-          color: black;
+          color: var(--white);
         }
       }
     }
     #body {
-      margin-top: 1.5rem;
+      margin-top: 9rem;
 
       h1 {
         font-size: 4rem;
-        color: white;
+        font-weight: 700;
+        color: var(--white);
       }
       p {
         font-size: 1.3rem;
-        color: var(--white);
+        color: var(--light-gray);
+      }
+    }
+    #footer {
+      display: flex;
+      justify-content: center;
+
+      footer img {
+        margin: 2rem 1rem 2rem 1rem;
+        width: 2.3rem;
       }
     }
   }
