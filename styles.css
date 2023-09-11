@@ -89,9 +89,32 @@ body {
       display: flex;
       justify-content: center;
 
-      footer img {
+      footer svg {
         margin: 2rem 1rem 2rem 1rem;
         width: 2.3rem;
+      }
+      footer {
+        #github svg {
+          fill: var(--black);
+        }
+        #github path {
+          fill: var(--white);
+        }
+        #linkedin svg {
+          fill: var(--white);
+        }
+        #linkedin svg path {
+          stroke: var(--white);
+        }
+        #linkedin rect {
+          fill: var(--black);
+        }
+        #twitter svg rect {
+          fill: var(--black);
+        }
+        #twitter svg path {
+          fill: var(--white);
+        }
       }
     }
   }
