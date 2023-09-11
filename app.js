@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById('toggle-mode');
     let modePreference = localStorage.getItem("modePreference") === "false";
+    const toggle = document.getElementById('toggle-mode');
     if (modePreference) {
         toggleMode();
         toggle.src = ".././img/moon.svg";
