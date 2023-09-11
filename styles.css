@@ -17,8 +17,6 @@ a {
 body {
   font-family: "Open Sans", monospace;
   min-height: 100vh;
-  background-color: var(--black);
-  color: var(--light-gray);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +29,6 @@ body {
       width: 75%;
       height: 10rem;
       position: fixed;
-      background-color: var(--black);
 
       header {
         display: flex;
@@ -58,17 +55,8 @@ body {
           align-items: center;
           justify-content: center;
         }
-        #links a:link {
-          color: var(--white);
-        }
-        #links a:visited {
-          color: var(--white);
-        }
         #links a:hover {
-          color: var(--white);
-        }
-        #links a:active {
-          color: var(--white);
+          color: none;
         }
         #links a img {
           width: 2.5rem;
@@ -81,11 +69,9 @@ body {
       h1 {
         font-size: 4rem;
         font-weight: 700;
-        color: var(--white);
       }
       p {
         font-size: 1.3rem;
-        color: var(--light-gray);
       }
     }
     #footer {
@@ -99,11 +85,29 @@ body {
     }
   }
 }
-.dark {
+.footer-dark {
   fill: var(--black);
   stroke: var(--black);
 }
-.light {
+.footer-light {
   fill: var(--white);
   stroke: var(--white);
+}
+.background-dark {
+  background-color: var(--black);
+}
+.background-light {
+  background-color: var(--white);
+}
+.para-dark {
+  color: var(--light-gray);
+}
+.para-light {
+  color: var(--black);
+}
+.color-dark {
+  color: var(--white);
+}
+.color-light {
+  color: var(--black);
 }
