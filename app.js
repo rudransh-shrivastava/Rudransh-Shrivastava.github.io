@@ -1,16 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let imgToggle = true;
     const toggle = document.getElementById('toggle-mode');
+    let modePreference = localStorage.getItem("modePreference") === "false";
+    if (modePreference) {
+        toggleMode();
+        toggle.src = ".././img/moon.svg";
+    }
     toggle.addEventListener('click', function (event) {
         event.preventDefault();
-        const footerItems = document.querySelectorAll('.footer-mode');
-        if (imgToggle) {
+        let darkMode = localStorage.getItem("modePreference") === "true";
+        if (darkMode) {
             toggle.src = ".././img/moon.svg";
-            imgToggle = false;
+            localStorage.setItem("modePreference", "false");
         } else {
             toggle.src = ".././img/sun.svg";
-            imgToggle = true;
+            localStorage.setItem("modePreference", "true");
         }
+        toggleMode();
+    });
+    function toggleMode() {
+
+        const footerItems = document.querySelectorAll('.footer-mode');
         footerItems.forEach((item) => {
             const isLight = item.classList.contains('footer-light');
             if (isLight) {
@@ -54,5 +63,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 item.classList.add('para-light');
             }
         })
-    });
+    }
 });
