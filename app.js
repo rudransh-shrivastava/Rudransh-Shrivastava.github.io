@@ -68,5 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 item.classList.add('para-light');
             }
         })
+        const borderItems = document.querySelectorAll('.border-mode');
+        borderItems.forEach((item) => {
+            const isLight = item.classList.contains('border-light');
+            if (isLight) {
+                item.classList.remove('border-light');
+                item.classList.add('border-dark');
+            } else {
+                item.classList.remove('border-dark');
+                item.classList.add('border-light');
+            }
+        })
     }
 });

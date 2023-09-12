@@ -1,0 +1,45 @@
+:root {
+  --darkest-blue: rgb(4, 13, 18);
+  --blue: rgb(24, 61, 61);
+  --light-gray: rgb(114, 156, 140);
+  --lightest-blue: rgb(162, 189, 179);
+}
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 2rem 0 0 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.project-details {
+  padding: 1rem 2rem;
+}
+
+.project-card h2 {
+  padding: 0;
+}
+
+.project-card p {
+  padding: 0rem;
+}
+
+@media (max-width: 768px) {
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+}

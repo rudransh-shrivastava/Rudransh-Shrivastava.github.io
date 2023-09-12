@@ -66,7 +66,6 @@ header {
 #links a:hover {
   color: none;
 }
-
 #links a img {
   width: 2.5rem;
 }
@@ -78,6 +77,15 @@ header {
 h1 {
   font-size: 4rem;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 p {
@@ -126,4 +134,10 @@ footer svg {
 
 .color-light {
   color: var(--darkest-blue);
+}
+.border-dark {
+  border: 0.15rem solid var(--lightest-blue);
+}
+.border-light {
+  border: 0.15rem solid var(--darkest-blue);
 }
