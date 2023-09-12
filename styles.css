@@ -1,8 +1,8 @@
 :root {
-  --black: rgba(23, 23, 23, 1);
-  --blue: rgba(126, 137, 201, 1);
-  --light-gray: rgba(255, 255, 255, 0.5);
-  --white: rgba(255, 255, 255, 1);
+  --darkest-blue: rgb(4, 13, 18);
+  --blue: rgb(24, 61, 61);
+  --light-gray: rgb(114, 156, 140);
+  --lightest-blue: rgb(162, 189, 179);
 }
 
 /* clear defaults */
@@ -95,21 +95,21 @@ footer svg {
 }
 
 .footer-dark {
-  fill: var(--black);
-  stroke: var(--black);
+  fill: var(--darkest-blue);
+  stroke: var(--darkest-blue);
 }
 
 .footer-light {
-  fill: var(--white);
-  stroke: var(--white);
+  fill: var(--lightest-blue);
+  stroke: var(--lightest-blue);
 }
 
 .background-dark {
-  background-color: var(--black);
+  background-color: var(--darkest-blue);
 }
 
 .background-light {
-  background-color: var(--white);
+  background-color: var(--lightest-blue);
 }
 
 .para-dark {
@@ -117,13 +117,13 @@ footer svg {
 }
 
 .para-light {
-  color: var(--black);
+  color: var(--blue);
 }
 
 .color-dark {
-  color: var(--white);
+  color: var(--lightest-blue);
 }
 
 .color-light {
-  color: var(--black);
+  color: var(--darkest-blue);
 }
