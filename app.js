@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem("modePreference") === null) {
+        localStorage.setItem("modePreference", "true");
+    };
     let modePreference = localStorage.getItem("modePreference") === "false";
     const toggle = document.getElementById('toggle-mode');
     if (modePreference) {
-        toggleMode();
         toggle.src = ".././img/moon.svg";
+        toggleMode();
+    } else {
+        toggle.src = ".././img/sun.svg";
     }
     toggle.addEventListener('click', function (event) {
         event.preventDefault();
