@@ -70,6 +70,12 @@ header {
   width: 2.5rem;
 }
 
+#menu {
+  width: 3.5rem;
+  height: auto;
+  margin: 1rem;
+  display: none;
+}
 #body {
   margin-top: 9rem;
 }
@@ -140,4 +146,54 @@ footer svg {
 }
 .border-light {
   border: 0.15rem solid var(--darkest-blue);
+}
+
+@media (max-width: 800px) {
+  #header {
+    min-width: 80%;
+  }
+  #logo img {
+    margin-top: 1.2rem;
+  }
+  #links {
+    justify-content: end;
+  }
+  #links a {
+    display: none;
+  }
+  #links a:nth-last-child(2) {
+    display: flex;
+  }
+  #links #menu {
+    display: block;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    width: 88%;
+  }
+  #links #menu {
+    margin-right: 3.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  footer svg {
+    margin: 1rem 0.5rem 2rem 0.5rem;
+    width: 2.3rem;
+  }
 }
