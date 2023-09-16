@@ -82,7 +82,7 @@ header {
 }
 
 #links {
-  width: 35rem;
+  width: 30rem;
   display: flex;
   justify-content: space-around;
 }
