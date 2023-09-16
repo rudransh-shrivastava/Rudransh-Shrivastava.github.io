@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -97,6 +98,7 @@ header {
 #links a:hover {
   color: none;
 }
+
 #links a img {
   width: 2.5rem;
 }
@@ -107,6 +109,7 @@ header {
   margin: 1rem;
   display: none;
 }
+
 #menu svg:hover {
   cursor: pointer;
 }
@@ -176,9 +179,11 @@ footer svg {
 .color-light {
   color: var(--darkest-blue);
 }
+
 .border-dark {
   border: 0.15rem solid var(--lightest-blue);
 }
+
 .border-light {
   border: 0.15rem solid var(--darkest-blue);
 }
@@ -187,18 +192,23 @@ footer svg {
   #header {
     min-width: 80%;
   }
+
   #logo img {
     margin-top: 1.2rem;
   }
+
   #links {
     justify-content: end;
   }
+
   #links a {
     display: none;
   }
+
   #links a:nth-last-child(2) {
     display: flex;
   }
+
   #links #menu {
     display: block;
     margin-right: 1.5rem;
@@ -209,9 +219,11 @@ footer svg {
   #header {
     width: 88%;
   }
+
   #links #menu {
     margin-right: 3.5rem;
   }
+
   h1 {
     font-size: 2.8rem;
   }
@@ -227,10 +239,12 @@ footer svg {
   p {
     font-size: 1rem;
   }
+
   footer svg {
     margin: 1rem 0.5rem 2rem 0.5rem;
     width: 2.3rem;
   }
+
   #close {
     margin-right: 4rem;
   }

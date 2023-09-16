@@ -4,6 +4,7 @@
   --light-gray: rgb(114, 156, 140);
   --lightest-blue: rgb(162, 189, 179);
 }
+
 .project-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
