@@ -80,4 +80,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     }
+
+    const menu = document.querySelector('#menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    menu.addEventListener('click', () => {
+        menuOverlay.style.left = "0";
+    });
+
+    const close = document.getElementById('close');
+    close.addEventListener('click', () => {
+        menuOverlay.style.left = "100%";
+    })
 });
